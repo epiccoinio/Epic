@@ -105,7 +105,7 @@ std::string to_internal(const std::string&);
 
 using namespace std;
 
-// Northern only features
+// Epic only features
 // Masternode
 bool fMasterNode = false;
 string strMasterNodePrivKey = "";
@@ -227,7 +227,7 @@ bool LogAcceptCategory(const char* category)
             const vector<string>& categories = mapMultiArgs["-debug"];
             ptrCategory.reset(new set<string>(categories.begin(), categories.end()));
             // thread_specific_ptr automatically deletes the set when the thread ends.
-            // "epic" is a composite category enabling all Northern-related debug output
+            // "epic" is a composite category enabling all Epic-related debug output
             if (ptrCategory->count(string("epic"))) {
                 ptrCategory->insert(string("swifttx"));
                 ptrCategory->insert(string("masternode"));
@@ -412,13 +412,13 @@ void PrintExceptionContinue(std::exception* pex, const char* pszThread)
 boost::filesystem::path GetDefaultDataDir()
 {
     namespace fs = boost::filesystem;
-// Windows < Vista: C:\Documents and Settings\Username\Application Data\Northern
-// Windows >= Vista: C:\Users\Username\AppData\Roaming\Northern
-// Mac: ~/Library/Application Support/Northern
+// Windows < Vista: C:\Documents and Settings\Username\Application Data\Epic
+// Windows >= Vista: C:\Users\Username\AppData\Roaming\Epic
+// Mac: ~/Library/Application Support/Epic
 // Unix: ~/.epic
 #ifdef WIN32
     // Windows
-    return GetSpecialFolderPath(CSIDL_APPDATA) / "Northern";
+    return GetSpecialFolderPath(CSIDL_APPDATA) / "Epic";
 #else
     fs::path pathRet;
     char* pszHome = getenv("HOME");
@@ -430,7 +430,7 @@ boost::filesystem::path GetDefaultDataDir()
     // Mac
     pathRet /= "Library/Application Support";
     TryCreateDirectory(pathRet);
-    return pathRet / "Northern";
+    return pathRet / "Epic";
 #else
     // Unix
     return pathRet / ".epic";

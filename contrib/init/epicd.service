@@ -1,0 +1,26 @@
+[Unit]
+Description=Epic's distributed currency daemon
+After=network.target
+
+[Service]
+User=epic
+Group=epic
+
+Type=forking
+PIDFile=/var/lib/epicd/epicd.pid
+
+ExecStart=/usr/bin/epicd -daemon -pid=/var/lib/epicd/epicd.pid \
+          -conf=/etc/epic/epic.conf -datadir=/var/lib/epicd
+
+ExecStop=-/usr/bin/epic-cli -conf=/etc/epic/epic.conf \
+         -datadir=/var/lib/epicd stop
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target

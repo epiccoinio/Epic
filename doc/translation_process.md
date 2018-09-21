@@ -1,7 +1,7 @@
 Translations
 ============
 
-The Northern Core project has been designed to support multiple localisations. This makes adding new phrases, and completely new languages easily achievable.
+The Epic Core project has been designed to support multiple localisations. This makes adding new phrases, and completely new languages easily achievable.
 
 ### Writing code with translations
 We use automated scripts to help extract translations in both Qt, and non-Qt source files. It is rarely necessary to manually edit the files in `src/qt/locale/`. The translation source files must adhere to the following format:
@@ -55,6 +55,6 @@ To create a new language template, you will need to edit the languages manifest 
 **Note:** that the language translation file **must end in `.qm`** (the compiled extension), and not `.ts`.
 
 ### Questions and general assistance
-[Northern Discord](https://discord.gg/9nzt37V).
+[Epic Discord](https://discord.gg/9nzt37V).
 
 Announcements will be posted during application pre-releases to notify translators to check for updates.

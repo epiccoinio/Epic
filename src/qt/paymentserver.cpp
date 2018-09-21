@@ -86,7 +86,7 @@ namespace // Anon namespace
 //
 static QString ipcServerName()
 {
-    QString name("NorthernQt");
+    QString name("EpicQt");
 
     // Append a simple hash of the datadir
     // Note that GetDataDir(true) returns a different path
@@ -409,7 +409,7 @@ void PaymentServer::handleURIOrFile(const QString& s)
                     emit receivedPaymentRequest(recipient);
             } else
                 emit message(tr("URI handling"),
-                    tr("URI cannot be parsed! This can be caused by an invalid NORT address or malformed URI parameters."),
+                    tr("URI cannot be parsed! This can be caused by an invalid EPIC address or malformed URI parameters."),
                     CClientUIInterface::ICON_WARNING);
 
             return;
@@ -524,7 +524,7 @@ bool PaymentServer::processPaymentRequest(PaymentRequestPlus& request, SendCoins
             // Append destination address
             addresses.append(QString::fromStdString(CBitcoinAddress(dest).ToString()));
         } else if (!recipient.authenticatedMerchant.isEmpty()) {
-            // Insecure payments to custom nort addresses are not supported
+            // Insecure payments to custom epic addresses are not supported
             // (there is no good way to tell the user where they are paying in a way
             // they'd have a chance of understanding).
             emit message(tr("Payment request rejected"),

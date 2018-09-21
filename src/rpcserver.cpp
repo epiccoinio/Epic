@@ -242,10 +242,10 @@ UniValue stop(const UniValue& params, bool fHelp)
     if (fHelp || params.size() > 1)
         throw runtime_error(
             "stop\n"
-            "\nStop Northern server.");
+            "\nStop Epic server.");
     // Shutdown will take long enough that the response should get back
     StartShutdown();
-    return "Northern server stopping";
+    return "Epic server stopping";
 }
 
 
@@ -327,7 +327,7 @@ static const CRPCCommand vRPCCommands[] =
         {"hidden", "reconsiderblock", &reconsiderblock, true, true, false},
         {"hidden", "setmocktime", &setmocktime, true, false, false},
 
-        /* Northern features */
+        /* Epic features */
         {"epic", "masternode", &masternode, true, true, false},
         {"epic", "listmasternodes", &listmasternodes, true, true, false},
         {"epic", "getmasternodecount", &getmasternodecount, true, true, false},
@@ -1077,7 +1077,7 @@ std::string HelpExampleRpc(string methodname, string args)
 {
     return "> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", "
            "\"method\": \"" +
-           methodname + "\", \"params\": [" + args + "] }' -H 'content-type: text/plain;' http://127.0.0.1:9332/\n";
+           methodname + "\", \"params\": [" + args + "] }' -H 'content-type: text/plain;' http://127.0.0.1:1256/\n";
 }
 
 const CRPCTable tableRPC;

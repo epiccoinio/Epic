@@ -1,7 +1,7 @@
 [Desktop Entry]
 Encoding=UTF-8
-Name=Northern
-Comment=Northern P2P Cryptocurrency
+Name=Epic
+Comment=Epic P2P Cryptocurrency
 Exec=epic-qt %u
 Terminal=false
 Type=Application

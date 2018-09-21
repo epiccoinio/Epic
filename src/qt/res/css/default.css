@@ -786,12 +786,12 @@ QDialog#HelpMessageDialog QScrollBar:vertical, QDialog#HelpMessageDialog QScroll
 	border:0;
 }
 
-/* About Northern Dialog */
-QDialog#AboutDialog QLabel#label, QDialog#AboutDialog QLabel#copyrightLabel, QDialog#AboutDialog QLabel#label_2 { /* About Northern Contents */
+/* About Epic Dialog */
+QDialog#AboutDialog QLabel#label, QDialog#AboutDialog QLabel#copyrightLabel, QDialog#AboutDialog QLabel#label_2 { /* About Epic Contents */
 	margin-left:10px;
 }
 
-QDialog#AboutDialog QLabel#label_2 { /* Margin for About Northern text */
+QDialog#AboutDialog QLabel#label_2 { /* Margin for About Epic text */
 	margin-right:10px;
 }
 
@@ -886,7 +886,7 @@ QWidget .QFrame#frameBalances .QLabel#labelImmatureText, /* Immature Balance Lab
 QWidget .QFrame#frameBalances .QLabel#labelTotalText, /* Total Balance Label */
 QWidget .QFrame#frameBalances .QLabel#labelPendingText, /* Pending Balance Label */
 QWidget .QFrame#frameBalances .QLabel#labelBalanceText, /* Available Balance Label */
-QWidget .QFrame#frameBalances .QLabel#labelBalances { /* NORT Balances Header Label */
+QWidget .QFrame#frameBalances .QLabel#labelBalances { /* EPIC Balances Header Label */
 	qproperty-alignment: 'AlignVCenter | AlignLeft';
 	min-width: 160px;
 	color: #333333;
@@ -895,11 +895,11 @@ QWidget .QFrame#frameBalances .QLabel#labelBalances { /* NORT Balances Header La
 	font-size: 14px;
 }
 
-QWidget .QFrame#frameBalances .QLabel#labelBalances { /* NORT Balances Header Label */
+QWidget .QFrame#frameBalances .QLabel#labelBalances { /* EPIC Balances Header Label */
 	font-weight: bold;
 }
 
-QWidget .QFrame#frameBalances #lineBalances { /* NORT Balances Line separator */
+QWidget .QFrame#frameBalances #lineBalances { /* EPIC Balances Line separator */
 	background-color:#003046;
 }
 

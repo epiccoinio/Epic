@@ -10,7 +10,7 @@
 
 /**
  * CBaseChainParams defines the base parameters (shared between epic-cli and epicd)
- * of a given instance of the Northern system.
+ * of a given instance of the Epic system.
  */
 class CBaseChainParams
 {

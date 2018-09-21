@@ -8,8 +8,8 @@
 # Does the following:
 #   a) creates 3 nodes, with an empty chain (no blocks).
 #   b) node0 mines a block
-#   c) node1 mines 32 blocks, so now node 0 has 500000NORT, node 1 has 4250NORT, node2 has none.
-#   d) node0 sends 601 NORT to node2, in two transactions (301 NORT, then 300 NORT).
+#   c) node1 mines 32 blocks, so now node 0 has 500000EPIC, node 1 has 4250EPIC, node2 has none.
+#   d) node0 sends 601 EPIC to node2, in two transactions (301 EPIC, then 300 EPIC).
 #   e) node0 mines a block, collects the fee on the second transaction
 #   f) node1 mines 16 blocks, to mature node0's just-mined block
 #   g) check that node0 has 100-21, node2 has 21

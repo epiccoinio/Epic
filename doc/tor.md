@@ -1,7 +1,7 @@
-TOR SUPPORT IN Northern
+TOR SUPPORT IN Epic
 ============================
 
-It is possible to run Northern as a Tor hidden service, and connect to such services.
+It is possible to run Epic as a Tor hidden service, and connect to such services.
 
 The following directions assume you have a Tor proxy running on port 9050. Many
 distributions default to having a SOCKS proxy listening on port 9050, but others
@@ -10,10 +10,10 @@ port. See [Tor Project FAQ:TBBSocksPort](https://www.torproject.org/docs/faq.htm
 for how to properly configure Tor.
 
 
-Run Northern behind a Tor proxy
+Run Epic behind a Tor proxy
 ------------------------------------
 
-The first step is running Northern behind a Tor proxy. This will already make all
+The first step is running Epic behind a Tor proxy. This will already make all
 outgoing connections be anonymized, but more is possible.
 ```
 -proxy=ip:port  Set the proxy server. If SOCKS5 is selected (default), this proxy
@@ -46,7 +46,7 @@ In a typical situation, this suffices to run behind a Tor proxy:
 ./epicd -proxy=127.0.0.1:9050
 ```
 
-Run a Northern hidden server
+Run a Epic hidden server
 ----------------------------------
 
 If you configure your Tor system accordingly, it is possible to make your node also
@@ -59,7 +59,7 @@ SOCKSPolicy accept 127.0.0.1/8
 Log notice file /var/log/tor/notices.log
 ControlPort 9051
 HiddenServiceDir /var/lib/tor/dnet/
-HiddenServicePort 989 127.0.0.1:6942
+HiddenServicePort 989 127.0.0.1:1255
 HiddenServiceStatistics 0
 ORPort 9001
 LongLivedPorts 989
@@ -69,7 +69,7 @@ NumEntryGuards 8
 ```
 
 The directory can be different of course, but (both) port numbers should be equal to
-your epicd's P2P listen port (6942 by default).
+your epicd's P2P listen port (1255 by default).
 ```
 -externalip=X   You can tell epic about its publicly reachable address using
                 this option, and this can be a .onion address. Given the above
@@ -102,7 +102,7 @@ specify:
 ./epicd ... -discover
 ```
 
-and open port 6942 on your firewall (or use -upnp).
+and open port 1255 on your firewall (or use -upnp).
 
 If you only want to use Tor to reach onion addresses, but not use it as a proxy
 for normal IPv4/IPv6 communication, use:
@@ -110,7 +110,7 @@ for normal IPv4/IPv6 communication, use:
 ./epicd -onion=127.0.0.1:9050 -externalip=dnetzj6l4cvo2fxy.onion:989 -discover
 ```
 
-List of known Northern Tor relays
+List of known Epic Tor relays
 ------------------------------------
 ```
 ***TODO***

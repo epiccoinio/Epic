@@ -96,7 +96,7 @@ public:
 };
 
 /**
- * Northern RPC command dispatcher.
+ * Epic RPC command dispatcher.
  */
 class CRPCTable
 {
