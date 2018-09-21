@@ -1,4 +1,4 @@
-Source: northern
+Source: epic
 Section: utils
 Priority: optional
 Maintainer: Jonas Smedegaard <dr@jones.dk> ***TODO***
@@ -23,10 +23,10 @@ Build-Depends: debhelper,
  libprotobuf-dev, protobuf-compiler
 Standards-Version: 3.9.2
 Homepage: http://www.savebitcoin.io
-Vcs-Git: git://github.com/northern/northern.git
-Vcs-Browser: http://github.com/northern/northern
+Vcs-Git: git://github.com/epic/epic.git
+Vcs-Browser: http://github.com/epic/epic
 
-Package: northernd
+Package: epicd
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: peer-to-peer network based digital currency - daemon
@@ -39,10 +39,10 @@ Description: peer-to-peer network based digital currency - daemon
  Full transaction history is stored locally at each client.  This
  requires 1+ GB of space, slowly growing.
  .
- This package provides the daemon, northernd, and the CLI tool
- northern-cli to interact with the daemon.
+ This package provides the daemon, epicd, and the CLI tool
+ epic-cli to interact with the daemon.
 
-Package: northern-qt
+Package: epic-qt
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: peer-to-peer network based digital currency - Qt GUI

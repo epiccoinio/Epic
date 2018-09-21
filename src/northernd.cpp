@@ -67,7 +67,7 @@ bool AppInit(int argc, char* argv[])
     //
     // Parameters
     //
-    // If Qt is used, parameters/northern.conf are parsed in qt/northern.cpp's main()
+    // If Qt is used, parameters/epic.conf are parsed in qt/epic.cpp's main()
     ParseParameters(argc, argv);
 
     // Process help and version before taking care about datadir
@@ -78,7 +78,7 @@ bool AppInit(int argc, char* argv[])
             strUsage += LicenseInfo();
         } else {
             strUsage += "\n" + _("Usage:") + "\n" +
-                        "  northernd [options]                     " + _("Start Northern Core Daemon") + "\n";
+                        "  epicd [options]                     " + _("Start Northern Core Daemon") + "\n";
 
             strUsage += "\n" + HelpMessage(HMM_BITCOIND);
         }
@@ -114,11 +114,11 @@ bool AppInit(int argc, char* argv[])
         // Command-line RPC
         bool fCommandLine = false;
         for (int i = 1; i < argc; i++)
-            if (!IsSwitchChar(argv[i][0]) && !boost::algorithm::istarts_with(argv[i], "northern:"))
+            if (!IsSwitchChar(argv[i][0]) && !boost::algorithm::istarts_with(argv[i], "epic:"))
                 fCommandLine = true;
 
         if (fCommandLine) {
-            fprintf(stderr, "Error: There is no RPC client functionality in northernd anymore. Use the northern-cli utility instead.\n");
+            fprintf(stderr, "Error: There is no RPC client functionality in epicd anymore. Use the epic-cli utility instead.\n");
             exit(1);
         }
 #ifndef WIN32
@@ -177,7 +177,7 @@ int main(int argc, char* argv[])
 {
     SetupEnvironment();
 
-    // Connect northern signal handlers
+    // Connect epic signal handlers
     noui_connect();
 
     return (AppInit(argc, argv) ? 0 : 1);

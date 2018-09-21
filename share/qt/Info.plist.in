@@ -43,7 +43,7 @@
       <string>io.savebitcoin.NorthernPayment</string>
       <key>CFBundleURLSchemes</key>
       <array>
-        <string>northern</string>
+        <string>epic</string>
       </array>
     </dict>
   </array>
@@ -62,10 +62,10 @@
       <key>UTTypeTagSpecification</key>
       <dict>
         <key>public.mime-type</key>
-        <string>application/x-northern-payment-request</string>
+        <string>application/x-epic-payment-request</string>
         <key>public.filename-extension</key>
         <array>
-          <string>northernpaymentrequest</string>
+          <string>epicpaymentrequest</string>
         </array>
       </dict>
     </dict>

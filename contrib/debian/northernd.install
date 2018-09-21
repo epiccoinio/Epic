@@ -1,2 +1,2 @@
-usr/local/bin/northernd usr/bin
-usr/local/bin/northern-cli usr/bin
+usr/local/bin/epicd usr/bin
+usr/local/bin/epic-cli usr/bin

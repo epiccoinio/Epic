@@ -48,10 +48,10 @@ static bool AppInitRawTx(int argc, char* argv[])
 
     if (argc < 2 || mapArgs.count("-?") || mapArgs.count("-help")) {
         // First part of help message is specific to this utility
-        std::string strUsage = _("Northern Core northern-tx utility version") + " " + FormatFullVersion() + "\n\n" +
+        std::string strUsage = _("Northern Core epic-tx utility version") + " " + FormatFullVersion() + "\n\n" +
                                _("Usage:") + "\n" +
-                               "  northern-tx [options] <hex-tx> [commands]  " + _("Update hex-encoded northern transaction") + "\n" +
-                               "  northern-tx [options] -create [commands]   " + _("Create hex-encoded northern transaction") + "\n" +
+                               "  epic-tx [options] <hex-tx> [commands]  " + _("Update hex-encoded epic transaction") + "\n" +
+                               "  epic-tx [options] -create [commands]   " + _("Create hex-encoded epic transaction") + "\n" +
                                "\n";
 
         fprintf(stdout, "%s", strUsage.c_str());
@@ -553,7 +553,7 @@ static int CommandLineRawTx(int argc, char* argv[])
             if (argc < 2)
                 throw runtime_error("too few parameters");
 
-            // param: hex-encoded northern transaction
+            // param: hex-encoded epic transaction
             string strHexTx(argv[1]);
             if (strHexTx == "-") // "-" implies standard input
                 strHexTx = readStdin();

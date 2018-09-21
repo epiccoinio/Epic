@@ -590,8 +590,8 @@
         <translation>Enviar moedas para um endereço NORT</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and northern: URIs)</source>
-        <translation>Requisitar pagamentos (gera códigos QR e northern: URIs)</translation>
+        <source>Request payments (generates QR codes and epic: URIs)</source>
+        <translation>Requisitar pagamentos (gera códigos QR e epic: URIs)</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -650,8 +650,8 @@
         <translation>Abrir arquivo de configuração de Masternode</translation>
     </message>
     <message>
-        <source>Open a northern: URI or payment request</source>
-        <translation>Abrir um northern: URI ou requisição de pagamento</translation>
+        <source>Open a epic: URI or payment request</source>
+        <translation>Abrir um epic: URI ou requisição de pagamento</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -798,8 +798,8 @@ MultiSend: %1</translation>
         <translation>Rótulo</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (northern.conf).</source>
-        <translation>Nem todas as transações serão exibidas. Para visualizar todas as transações você precisa definir txindex=1 no arquivo de configuração (northern.conf). </translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (epic.conf).</source>
+        <translation>Nem todas as transações serão exibidas. Para visualizar todas as transações você precisa definir txindex=1 no arquivo de configuração (epic.conf). </translation>
     </message>
 </context>
 <context>
@@ -3201,7 +3201,7 @@ Favor verificar o endereço e tente novamente.</translation>
     </message>
 </context>
 <context>
-    <name>northern-core</name>
+    <name>epic-core</name>
     <message>
         <source>Delete all wallet transactions and only recover those parts of the blockchain through -rescan on startup</source>
         <translation>Deletar todas as transações da carteira e somente recuperar aquelas partes da blockchain através de -rescan na inicialização</translation>

@@ -1,6 +1,6 @@
 [Protocol]
-exec=northern-qt '%u'
-protocol=northern
+exec=epic-qt '%u'
+protocol=epic
 input=none
 output=none
 helper=true

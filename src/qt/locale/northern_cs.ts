@@ -602,8 +602,8 @@
         <translation>Odeslat platbuna NORT adresu</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and northern: URIs)</source>
-        <translation>Vyžádat platbu (generování QK kódu a northern: URIs)</translation>
+        <source>Request payments (generates QR codes and epic: URIs)</source>
+        <translation>Vyžádat platbu (generování QK kódu a epic: URIs)</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -662,8 +662,8 @@
         <translation>Otevřít Masternodový konfigurační soubor</translation>
     </message>
     <message>
-        <source>Open a northern: URI or payment request</source>
-        <translation>Otevřít northern: URI nebo platební žádost</translation>
+        <source>Open a epic: URI or payment request</source>
+        <translation>Otevřít epic: URI nebo platební žádost</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -801,8 +801,8 @@ MultiSend: %1</translation>
         <translation>TextPopisku</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (northern.conf).</source>
-        <translation>Ne všechny transakce budou zobrazeny. Pro zobrazení všech transackí nastavte v konfiguračním souboru (northern.conf) txindex=1.</translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (epic.conf).</source>
+        <translation>Ne všechny transakce budou zobrazeny. Pro zobrazení všech transackí nastavte v konfiguračním souboru (epic.conf) txindex=1.</translation>
     </message>
 </context>
 <context>
@@ -2239,7 +2239,7 @@ Prosím zkontrolujte adresu a zkuste to znovu.</translation>
     </message>
     </context>
 <context>
-    <name>northern-core</name>
+    <name>epic-core</name>
     <message>
         <source>Error</source>
         <translation>Chyba</translation>

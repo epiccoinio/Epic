@@ -818,7 +818,7 @@ QLabel#labelOverviewHeaderLeft {
 
 QLabel#labelOverviewHeaderRight {
 	qproperty-alignment: 'AlignVCenter | AlignRight';
-	background-image: url(':/images/northern_logo_horizontal');
+	background-image: url(':/images/epic_logo_horizontal');
 	background-repeat: no-repeat;
 }
 

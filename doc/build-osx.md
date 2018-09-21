@@ -1,6 +1,6 @@
 Mac OS X Build Instructions and Notes
 ====================================
-This guide will show you how to build northernd (headless client) for OSX.
+This guide will show you how to build epicd (headless client) for OSX.
 
 Notes
 -----
@@ -40,14 +40,14 @@ Instructions: Homebrew
 
         brew install autoconf automake berkeley-db4 libtool boost miniupnpc openssl pkg-config protobuf qt5 libzmq
 
-### Building `northernd`
+### Building `epicd`
 
 1. Clone the github tree to get the source code and go into the directory.
 
-        git clone https://github.com/northern/northern.git
-        cd northern
+        git clone https://github.com/epic/epic.git
+        cd epic
 
-2.  Build northernd:
+2.  Build epicd:
 
         ./autogen.sh
         ./configure --with-gui=qt5
@@ -57,7 +57,7 @@ Instructions: Homebrew
 
         make check
 
-4.  (Optional) You can also install northernd to your path:
+4.  (Optional) You can also install epicd to your path:
 
         make install
 
@@ -69,7 +69,7 @@ Download Qt Creator from http://www.qt.io/download/. Download the "community edi
 1. Make sure you installed everything through homebrew mentioned above
 2. Do a proper ./configure --with-gui=qt5 --enable-debug
 3. In Qt Creator do "New Project" -> Import Project -> Import Existing Project
-4. Enter "northern-qt" as project name, enter src/qt as location
+4. Enter "epic-qt" as project name, enter src/qt as location
 5. Leave the file selection as it is
 6. Confirm the "summary page"
 7. In the "Projects" tab select "Manage Kits..."
@@ -79,11 +79,11 @@ Download Qt Creator from http://www.qt.io/download/. Download the "community edi
 
 Creating a release build
 ------------------------
-You can ignore this section if you are building `northernd` for your own use.
+You can ignore this section if you are building `epicd` for your own use.
 
-northernd/northern-cli binaries are not included in the Northern-Qt.app bundle.
+epicd/epic-cli binaries are not included in the Northern-Qt.app bundle.
 
-If you are building `northernd` or `northern-qt` for others, your build machine should be set up
+If you are building `epicd` or `epic-qt` for others, your build machine should be set up
 as follows for maximum compatibility:
 
 All dependencies should be compiled with these flags:
@@ -98,14 +98,14 @@ bundle is packaged and signed to create the .dmg disk image that is distributed.
 Running
 -------
 
-It's now available at `./northernd`, provided that you are still in the `src`
+It's now available at `./epicd`, provided that you are still in the `src`
 directory. We have to first create the RPC configuration file, though.
 
-Run `./northernd` to get the filename where it should be put, or just try these
+Run `./epicd` to get the filename where it should be put, or just try these
 commands:
 
-    echo -e "rpcuser=northernrpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/Northern/northern.conf"
-    chmod 600 "/Users/${USER}/Library/Application Support/Northern/northern.conf"
+    echo -e "rpcuser=epicrpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/Northern/epic.conf"
+    chmod 600 "/Users/${USER}/Library/Application Support/Northern/epic.conf"
 
 The next time you run it, it will start downloading the blockchain, but it won't
 output anything while it's doing this. This process may take several hours;
@@ -116,6 +116,6 @@ you can monitor its process by looking at the debug.log file, like this:
 Other commands:
 -------
 
-    ./northernd -daemon # to start the northern daemon.
-    ./northern-cli --help  # for a list of command-line options.
-    ./northern-cli help    # When the daemon is running, to get a list of RPC commands
+    ./epicd -daemon # to start the epic daemon.
+    ./epic-cli --help  # for a list of command-line options.
+    ./epic-cli help    # When the daemon is running, to get a list of RPC commands

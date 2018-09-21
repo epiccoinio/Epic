@@ -1,33 +1,33 @@
-bin_PROGRAMS += qt/northern-qt
+bin_PROGRAMS += qt/epic-qt
 EXTRA_LIBRARIES += qt/libbitcoinqt.a
 
-# northern qt core #
+# epic qt core #
 QT_TS = \
-  qt/locale/northern_bg.ts \
-  qt/locale/northern_ca.ts \
-  qt/locale/northern_cs.ts \
-  qt/locale/northern_da.ts \
-  qt/locale/northern_de.ts \
-  qt/locale/northern_en.ts \
-  qt/locale/northern_en_US.ts \
-  qt/locale/northern_es.ts \
-  qt/locale/northern_fi.ts \
-  qt/locale/northern_fr_FR.ts \
-  qt/locale/northern_it.ts \
-  qt/locale/northern_ja.ts \
-  qt/locale/northern_ko_KR.ts \
-  qt/locale/northern_nl.ts \
-  qt/locale/northern_pl.ts \
-  qt/locale/northern_pt.ts \
-  qt/locale/northern_pt_BR.ts \
-  qt/locale/northern_ro_RO.ts \
-  qt/locale/northern_ru.ts \
-  qt/locale/northern_sk.ts \
-  qt/locale/northern_sv.ts \
-  qt/locale/northern_tr.ts \
-  qt/locale/northern_uk.ts \
-  qt/locale/northern_zh_CN.ts \
-  qt/locale/northern_zh_TW.ts
+  qt/locale/epic_bg.ts \
+  qt/locale/epic_ca.ts \
+  qt/locale/epic_cs.ts \
+  qt/locale/epic_da.ts \
+  qt/locale/epic_de.ts \
+  qt/locale/epic_en.ts \
+  qt/locale/epic_en_US.ts \
+  qt/locale/epic_es.ts \
+  qt/locale/epic_fi.ts \
+  qt/locale/epic_fr_FR.ts \
+  qt/locale/epic_it.ts \
+  qt/locale/epic_ja.ts \
+  qt/locale/epic_ko_KR.ts \
+  qt/locale/epic_nl.ts \
+  qt/locale/epic_pl.ts \
+  qt/locale/epic_pt.ts \
+  qt/locale/epic_pt_BR.ts \
+  qt/locale/epic_ro_RO.ts \
+  qt/locale/epic_ru.ts \
+  qt/locale/epic_sk.ts \
+  qt/locale/epic_sv.ts \
+  qt/locale/epic_tr.ts \
+  qt/locale/epic_uk.ts \
+  qt/locale/epic_zh_CN.ts \
+  qt/locale/epic_zh_TW.ts
 
 QT_FORMS_UI = \
   qt/forms/addressbookpage.ui \
@@ -107,16 +107,16 @@ BITCOIN_MM = \
   qt/macnotificationhandler.mm
 
 QT_MOC = \
-  qt/northern.moc \
+  qt/epic.moc \
   qt/bitcoinamountfield.moc \
   qt/intro.moc \
   qt/overviewpage.moc \
   qt/rpcconsole.moc
 
-QT_QRC_CPP = qt/qrc_northern.cpp
-QT_QRC = qt/northern.qrc
-QT_QRC_LOCALE_CPP = qt/qrc_northern_locale.cpp
-QT_QRC_LOCALE = qt/northern_locale.qrc
+QT_QRC_CPP = qt/qrc_epic.cpp
+QT_QRC = qt/epic.qrc
+QT_QRC_LOCALE_CPP = qt/qrc_epic_locale.cpp
+QT_QRC_LOCALE = qt/epic_locale.qrc
 
 PROTOBUF_CC = qt/paymentrequest.pb.cc
 PROTOBUF_H = qt/paymentrequest.pb.h
@@ -303,7 +303,7 @@ BITCOIN_QT_CPP += \
 endif
 
 RES_IMAGES = \
-  qt/res/images/northern_logo_horizontal.png \
+  qt/res/images/epic_logo_horizontal.png \
   qt/res/images/about.png \
   qt/res/images/splash.png \
   qt/res/images/splash_testnet.png \
@@ -321,7 +321,7 @@ RES_CSS = \
 
 RES_MOVIES = $(wildcard $(srcdir)/qt/res/movies/spinner-*.png)
 
-BITCOIN_RC = qt/res/northern-qt-res.rc
+BITCOIN_RC = qt/res/epic-qt-res.rc
 
 BITCOIN_QT_INCLUDES = -I$(builddir)/qt -I$(srcdir)/qt -I$(srcdir)/qt/forms \
   -I$(builddir)/qt/forms
@@ -341,69 +341,69 @@ QT_FORMS_H=$(join $(dir $(QT_FORMS_UI)),$(addprefix ui_, $(notdir $(QT_FORMS_UI:
 # Most files will depend on the forms and moc files as includes. Generate them
 # before anything else.
 $(QT_MOC): $(QT_FORMS_H)
-$(qt_libbitcoinqt_a_OBJECTS) $(qt_northern_qt_OBJECTS) : | $(QT_MOC)
+$(qt_libbitcoinqt_a_OBJECTS) $(qt_epic_qt_OBJECTS) : | $(QT_MOC)
 
 #Generating these with a half-written protobuf header leads to wacky results.
 #This makes sure it's done.
 $(QT_MOC): $(PROTOBUF_H)
 $(QT_MOC_CPP): $(PROTOBUF_H)
 
-# northern-qt binary #
-qt_northern_qt_CPPFLAGS = $(BITCOIN_INCLUDES) $(BITCOIN_QT_INCLUDES) \
+# epic-qt binary #
+qt_epic_qt_CPPFLAGS = $(BITCOIN_INCLUDES) $(BITCOIN_QT_INCLUDES) \
   $(QT_INCLUDES) $(PROTOBUF_CFLAGS) $(QR_CFLAGS)
 
-qt_northern_qt_SOURCES = qt/northern.cpp
+qt_epic_qt_SOURCES = qt/epic.cpp
 if TARGET_DARWIN
-  qt_northern_qt_SOURCES += $(BITCOIN_MM)
+  qt_epic_qt_SOURCES += $(BITCOIN_MM)
 endif
 if TARGET_WINDOWS
-  qt_northern_qt_SOURCES += $(BITCOIN_RC)
+  qt_epic_qt_SOURCES += $(BITCOIN_RC)
 endif
-qt_northern_qt_LDADD = qt/libbitcoinqt.a $(LIBBITCOIN_SERVER)
+qt_epic_qt_LDADD = qt/libbitcoinqt.a $(LIBBITCOIN_SERVER)
 if ENABLE_WALLET
-qt_northern_qt_LDADD += $(LIBBITCOIN_WALLET)
+qt_epic_qt_LDADD += $(LIBBITCOIN_WALLET)
 endif
 if ENABLE_ZMQ
-qt_northern_qt_LDADD += $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
+qt_epic_qt_LDADD += $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
 endif
-qt_northern_qt_LDADD += $(LIBBITCOIN_CLI) $(LIBBITCOIN_COMMON) $(LIBBITCOIN_UTIL) $(LIBBITCOIN_CRYPTO) $(LIBUNIVALUE) $(LIBLEVELDB) $(LIBMEMENV) \
+qt_epic_qt_LDADD += $(LIBBITCOIN_CLI) $(LIBBITCOIN_COMMON) $(LIBBITCOIN_UTIL) $(LIBBITCOIN_CRYPTO) $(LIBUNIVALUE) $(LIBLEVELDB) $(LIBMEMENV) \
   $(BOOST_LIBS) $(QT_LIBS) $(QT_DBUS_LIBS) $(QR_LIBS) $(PROTOBUF_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(LIBSECP256K1) \
   $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS)
-qt_northern_qt_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(QT_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
-qt_northern_qt_LIBTOOLFLAGS = --tag CXX
+qt_epic_qt_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(QT_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+qt_epic_qt_LIBTOOLFLAGS = --tag CXX
 
 #locale/foo.ts -> locale/foo.qm
 QT_QM=$(QT_TS:.ts=.qm)
 
 .SECONDARY: $(QT_QM)
 
-qt/northernstrings.cpp: $(libbitcoin_server_a_SOURCES) $(libbitcoin_wallet_a_SOURCES) $(libbitcoin_common_a_SOURCES)
+qt/epicstrings.cpp: $(libbitcoin_server_a_SOURCES) $(libbitcoin_wallet_a_SOURCES) $(libbitcoin_common_a_SOURCES)
 	@test -n $(XGETTEXT) || echo "xgettext is required for updating translations"
 	$(AM_V_GEN) cd $(srcdir); XGETTEXT=$(XGETTEXT) $(PYTHON) ../share/qt/extract_strings_qt.py $^
 
-translate: qt/northernstrings.cpp $(QT_FORMS_UI) $(QT_FORMS_UI) $(BITCOIN_QT_CPP) $(BITCOIN_QT_H) $(BITCOIN_MM)
+translate: qt/epicstrings.cpp $(QT_FORMS_UI) $(QT_FORMS_UI) $(BITCOIN_QT_CPP) $(BITCOIN_QT_H) $(BITCOIN_MM)
 	@test -n $(LUPDATE) || echo "lupdate is required for updating translations"
-	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(LUPDATE) $^ -locations relative -no-obsolete -ts qt/locale/northern_en.ts
+	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(LUPDATE) $^ -locations relative -no-obsolete -ts qt/locale/epic_en.ts
 
 $(QT_QRC_LOCALE_CPP): $(QT_QRC_LOCALE) $(QT_QM)
 	@test -f $(RCC)
 	@test -f $(@D)/$(<F) || cp -f $< $(@D)
-	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(RCC) -name northern_locale $(@D)/$(<F) | \
+	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(RCC) -name epic_locale $(@D)/$(<F) | \
 	  $(SED) -e '/^\*\*.*Created:/d' -e '/^\*\*.*by:/d' > $@
 
 $(QT_QRC_CPP): $(QT_QRC) $(QT_FORMS_H) $(RES_ICONS) $(RES_IMAGES) $(RES_CSS) $(RES_MOVIES) $(PROTOBUF_H)
 	@test -f $(RCC)
-	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(RCC) -name northern $< | \
+	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(RCC) -name epic $< | \
 	  $(SED) -e '/^\*\*.*Created:/d' -e '/^\*\*.*by:/d' > $@
 
 CLEAN_QT = $(nodist_qt_libbitcoinqt_a_SOURCES) $(QT_QM) $(QT_FORMS_H) qt/*.gcda qt/*.gcno
 
 CLEANFILES += $(CLEAN_QT)
 
-northern_qt_clean: FORCE
-	rm -f $(CLEAN_QT) $(qt_libbitcoinqt_a_OBJECTS) $(qt_northern_qt_OBJECTS) qt/northern-qt$(EXEEXT) $(LIBBITCOINQT)
+epic_qt_clean: FORCE
+	rm -f $(CLEAN_QT) $(qt_libbitcoinqt_a_OBJECTS) $(qt_epic_qt_OBJECTS) qt/epic-qt$(EXEEXT) $(LIBBITCOINQT)
 
-northern_qt : qt/northern-qt$(EXEEXT)
+epic_qt : qt/epic-qt$(EXEEXT)
 
 ui_%.h: %.ui
 	@test -f $(UIC)

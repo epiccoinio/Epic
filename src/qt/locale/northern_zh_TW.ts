@@ -590,8 +590,8 @@
         <translation>送出錢幣到 NORT 地址</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and northern: URIs)</source>
-        <translation>請求付款 (會產生 QR Code跟 northern 位址)</translation>
+        <source>Request payments (generates QR codes and epic: URIs)</source>
+        <translation>請求付款 (會產生 QR Code跟 epic 位址)</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -650,8 +650,8 @@
         <translation>打開Masternode設定檔</translation>
     </message>
     <message>
-        <source>Open a northern: URI or payment request</source>
-        <translation>打開northern: 位址或付款請求 </translation>
+        <source>Open a epic: URI or payment request</source>
+        <translation>打開epic: 位址或付款請求 </translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -949,6 +949,6 @@
     </message>
     </context>
 <context>
-    <name>northern-core</name>
+    <name>epic-core</name>
     </context>
 </TS>

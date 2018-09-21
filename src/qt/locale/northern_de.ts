@@ -606,8 +606,8 @@
         <translation>An eine NORT-Adresse überweisen</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and northern: URIs)</source>
-        <translation>Zahlung anfordern (QR-Code Generierung und northern: URIs)</translation>
+        <source>Request payments (generates QR codes and epic: URIs)</source>
+        <translation>Zahlung anfordern (QR-Code Generierung und epic: URIs)</translation>
     </message>
     <message>
         <source>&amp;Privacy</source>
@@ -666,8 +666,8 @@
         <translation>Öffne Masternode Einstellungsdatei</translation>
     </message>
     <message>
-        <source>Open a northern: URI or payment request</source>
-        <translation>Öffne eine northern: URI or Zahlungsanfrage</translation>
+        <source>Open a epic: URI or payment request</source>
+        <translation>Öffne eine epic: URI or Zahlungsanfrage</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -836,8 +836,8 @@ Adresse: %4</translation>
         <translation>TextEtikett</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (northern.conf).</source>
-        <translation>Nicht alle Transaktionen können anzezeigt werden. Um alle Transaktionen zu sehen, müssen sie die Option  "txindex=1" in der "northern.conf" Konfigurationsdatei hinzufügen.</translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (epic.conf).</source>
+        <translation>Nicht alle Transaktionen können anzezeigt werden. Um alle Transaktionen zu sehen, müssen sie die Option  "txindex=1" in der "epic.conf" Konfigurationsdatei hinzufügen.</translation>
     </message>
 </context>
 <context>
@@ -1852,8 +1852,8 @@ Bitte Adresse überprüfen und nochmals versuchen.</translation>
         <translation>Zahlungsaufforderungadresse %1</translation>
     </message>
     <message>
-        <source>Cannot start northern: click-to-pay handler</source>
-        <translation>Kann northern nicht starten: click-to-pay Handler</translation>
+        <source>Cannot start epic: click-to-pay handler</source>
+        <translation>Kann epic nicht starten: click-to-pay Handler</translation>
     </message>
     <message>
         <source>URI cannot be parsed! This can be caused by an invalid NORT address or malformed URI parameters.</source>
@@ -2847,8 +2847,8 @@ Bitte Adresse überprüfen und nochmals versuchen.</translation>
         <translation>Nachricht:</translation>
     </message>
     <message>
-        <source>A message that was attached to the northern: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Northern network.</source>
-        <translation>Eine an die northern-URI angefügte Nachricht, die zusammen mit der Transaktion gespeichert wird. Hinweis: Diese Nachricht wird nicht über das Northern-Netzwerk gesendet.</translation>
+        <source>A message that was attached to the epic: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Northern network.</source>
+        <translation>Eine an die epic-URI angefügte Nachricht, die zusammen mit der Transaktion gespeichert wird. Hinweis: Diese Nachricht wird nicht über das Northern-Netzwerk gesendet.</translation>
     </message>
     <message>
         <source>This is an unverified payment request.</source>
@@ -3588,7 +3588,7 @@ Bitte Adresse überprüfen und nochmals versuchen.</translation>
     </message>
 </context>
 <context>
-    <name>northern-core</name>
+    <name>epic-core</name>
     <message>
         <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
         <translation>(1 = behalte Tx-Meta-Daten z.B. Betrag, Besitzer und Zahlungsanforderungsinformationen, 2 = verwerfe Tx-Meta-Daten)</translation>

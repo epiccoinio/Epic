@@ -22,10 +22,10 @@ BEGIN
             VALUE "CompanyName",        "Northern"
             VALUE "FileDescription",    "Northern Core (OSS GUI client for Northern)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
-            VALUE "InternalName",       "northern-qt"
+            VALUE "InternalName",       "epic-qt"
             VALUE "LegalCopyright",     COPYRIGHT_STR
             VALUE "LegalTrademarks1",   "Distributed under the MIT/X11 software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
-            VALUE "OriginalFilename",   "northern-qt.exe"
+            VALUE "OriginalFilename",   "epic-qt.exe"
             VALUE "ProductName",        "Northern Core"
             VALUE "ProductVersion",     VER_PRODUCTVERSION_STR
         END

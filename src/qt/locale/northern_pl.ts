@@ -522,8 +522,8 @@
         <translation>Wyślij monety do adresu NORT</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and northern: URIs)</source>
-        <translation>Zarządaj płatności (generuje kod QR i northern:URI)</translation>
+        <source>Request payments (generates QR codes and epic: URIs)</source>
+        <translation>Zarządaj płatności (generuje kod QR i epic:URI)</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -578,8 +578,8 @@
         <translation>Otwórz &amp;Plik konfiguracji Masternode</translation>
     </message>
     <message>
-        <source>Open a northern: URI or payment request</source>
-        <translation>Otwórz northern: URI i żądanie zapłaty</translation>
+        <source>Open a epic: URI or payment request</source>
+        <translation>Otwórz epic: URI i żądanie zapłaty</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -1927,7 +1927,7 @@ Proszę sprawdzić adres i spróbować ponownie</translation>
     </message>
     </context>
 <context>
-    <name>northern-core</name>
+    <name>epic-core</name>
     <message>
         <source>Error</source>
         <translation>Błąd</translation>

@@ -10,7 +10,7 @@
 #define BITCOIN_MAIN_H
 
 #if defined(HAVE_CONFIG_H)
-#include "config/northern-config.h"
+#include "config/epic-config.h"
 #endif
 
 #include "bignum.h"

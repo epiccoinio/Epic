@@ -44,9 +44,9 @@ OSX_PACKAGING = $(OSX_DEPLOY_SCRIPT) $(OSX_FANCY_PLIST) $(OSX_INSTALLER_ICONS) \
   $(top_srcdir)/contrib/macdeploy/detached-sig-create.sh
 
 COVERAGE_INFO = baseline_filtered_combined.info baseline.info block_test.info \
-  leveldb_baseline.info test_northern_filtered.info total_coverage.info \
+  leveldb_baseline.info test_epic_filtered.info total_coverage.info \
   baseline_filtered.info block_test_filtered.info \
-  leveldb_baseline_filtered.info test_northern_coverage.info test_northern.info
+  leveldb_baseline_filtered.info test_epic_coverage.info test_epic.info
 
 dist-hook:
 	-$(MAKE) -C $(top_distdir)/src/leveldb clean
@@ -176,16 +176,16 @@ leveldb_baseline_filtered.info: leveldb_baseline.info
 baseline_filtered_combined.info: leveldb_baseline_filtered.info baseline_filtered.info
 	$(LCOV) -a leveldb_baseline_filtered.info -a baseline_filtered.info -o $@
 
-test_northern.info: baseline_filtered_combined.info
+test_epic.info: baseline_filtered_combined.info
 	$(MAKE) -C src/ check
-	$(LCOV) -c -d $(abs_builddir)/src -t test_northern -o $@
+	$(LCOV) -c -d $(abs_builddir)/src -t test_epic -o $@
 	$(LCOV) -z -d $(abs_builddir)/src
 	$(LCOV) -z -d $(abs_builddir)/src/leveldb
 
-test_northern_filtered.info: test_northern.info
+test_epic_filtered.info: test_epic.info
 	$(LCOV) -r $< "/usr/include/*" -o $@
 
-block_test.info: test_northern_filtered.info
+block_test.info: test_epic_filtered.info
 	$(MKDIR_P) qa/tmp
 	-@TIMEOUT=15 qa/pull-tester/run-bitcoind-for-test.sh $(JAVA) -jar $(JAVA_COMPARISON_TOOL) qa/tmp/compTool 0
 	$(LCOV) -c -d $(abs_builddir)/src --t BitcoinJBlockTest -o $@
@@ -195,13 +195,13 @@ block_test.info: test_northern_filtered.info
 block_test_filtered.info: block_test.info
 	$(LCOV) -r $< "/usr/include/*" -o $@
 
-test_northern_coverage.info: baseline_filtered_combined.info test_northern_filtered.info
-	$(LCOV) -a baseline_filtered.info -a leveldb_baseline_filtered.info -a test_northern_filtered.info -o $@
+test_epic_coverage.info: baseline_filtered_combined.info test_epic_filtered.info
+	$(LCOV) -a baseline_filtered.info -a leveldb_baseline_filtered.info -a test_epic_filtered.info -o $@
 
-total_coverage.info:  baseline_filtered_combined.info test_northern_filtered.info block_test_filtered.info
-	$(LCOV) -a baseline_filtered.info -a leveldb_baseline_filtered.info -a test_northern_filtered.info -a block_test_filtered.info -o $@ | $(GREP) "\%" | $(AWK) '{ print substr($$3,2,50) "/" $$5 }' > coverage_percent.txt
+total_coverage.info:  baseline_filtered_combined.info test_epic_filtered.info block_test_filtered.info
+	$(LCOV) -a baseline_filtered.info -a leveldb_baseline_filtered.info -a test_epic_filtered.info -a block_test_filtered.info -o $@ | $(GREP) "\%" | $(AWK) '{ print substr($$3,2,50) "/" $$5 }' > coverage_percent.txt
 
-test_northern.coverage/.dirstamp:  test_northern_coverage.info
+test_epic.coverage/.dirstamp:  test_epic_coverage.info
 	$(GENHTML) -s $< -o $(@D)
 	@touch $@
 
@@ -209,7 +209,7 @@ total.coverage/.dirstamp: total_coverage.info
 	$(GENHTML) -s $< -o $(@D)
 	@touch $@
 
-cov: test_northern.coverage/.dirstamp total.coverage/.dirstamp
+cov: test_epic.coverage/.dirstamp total.coverage/.dirstamp
 
 endif
 
@@ -222,4 +222,4 @@ CLEANFILES = $(OSX_DMG) $(BITCOIN_WIN_INSTALLER)
 .INTERMEDIATE: $(COVERAGE_INFO)
 
 clean-local:
-	rm -rf test_northern.coverage/ total.coverage/ $(OSX_APP)
+	rm -rf test_epic.coverage/ total.coverage/ $(OSX_APP)

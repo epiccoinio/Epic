@@ -9,7 +9,7 @@
 #include <vector>
 
 /**
- * CBaseChainParams defines the base parameters (shared between northern-cli and northernd)
+ * CBaseChainParams defines the base parameters (shared between epic-cli and epicd)
  * of a given instance of the Northern system.
  */
 class CBaseChainParams

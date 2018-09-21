@@ -602,7 +602,7 @@
         <translation>Send mønter til en NORT adresse</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and northern: URIs)</source>
+        <source>Request payments (generates QR codes and epic: URIs)</source>
         <translation>Anmod om betaling (genrerer QR kode og Northern URL)</translation>
     </message>
     <message>
@@ -662,8 +662,8 @@
         <translation>ÅbnMasternode konfigurationsfil</translation>
     </message>
     <message>
-        <source>Open a northern: URI or payment request</source>
-        <translation>Åbn en northern URI eller betalingsanmodning</translation>
+        <source>Open a epic: URI or payment request</source>
+        <translation>Åbn en epic URI eller betalingsanmodning</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -805,8 +805,8 @@ Adresse: %4
         <translation>Tekstmærke</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (northern.conf).</source>
-        <translation>Ikke alle transaktioner vil blive vist. For at vise alle transaktioner må De sætte "txindex=1" i konfigurationsfilen (northern.conf).</translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (epic.conf).</source>
+        <translation>Ikke alle transaktioner vil blive vist. For at vise alle transaktioner må De sætte "txindex=1" i konfigurationsfilen (epic.conf).</translation>
     </message>
 </context>
 <context>
@@ -1809,8 +1809,8 @@ Kontroller adressen og prøv igen.</translation>
         <translation>Ugyldig betalingsadresse: %1</translation>
     </message>
     <message>
-        <source>Cannot start northern: click-to-pay handler</source>
-        <translation>Kan ikke starte northern "klik for at betale" systemet</translation>
+        <source>Cannot start epic: click-to-pay handler</source>
+        <translation>Kan ikke starte epic "klik for at betale" systemet</translation>
     </message>
     <message>
         <source>URI cannot be parsed! This can be caused by an invalid NORT address or malformed URI parameters.</source>
@@ -2792,8 +2792,8 @@ Kontroller adressen og prøv igen.</translation>
         <translation>Besked</translation>
     </message>
     <message>
-        <source>A message that was attached to the northern: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Northern network.</source>
-        <translation>En besked, der var vedhæftet til northern: URl wil blive gemt sammen med transaktionen som reference. Note: Beskeden bliver medsendt transaktionen over netværket.</translation>
+        <source>A message that was attached to the epic: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Northern network.</source>
+        <translation>En besked, der var vedhæftet til epic: URl wil blive gemt sammen med transaktionen som reference. Note: Beskeden bliver medsendt transaktionen over netværket.</translation>
     </message>
     <message>
         <source>This is an unverified payment request.</source>
@@ -3521,7 +3521,7 @@ Kontroller adressen og prøv igen.</translation>
     </message>
 </context>
 <context>
-    <name>northern-core</name>
+    <name>epic-core</name>
     <message>
         <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
         <translation>(1 = beholdtx metadata. For eksempel information om kontoejer og betalngsanmodninger, 2 = drop TX metadata)</translation>
@@ -3704,10 +3704,10 @@ Kontroller adressen og prøv igen.</translation>
         <translation>Dette produkt anvender software udviklet i OpenSSL projektet til brug i OpenSSL værktøjssættet &lt;https://www.openssl.org/&gt; og kryptosoftware skrevet afEric Young og UPnP software skrevet af Thomas Bernard.</translation>
     </message>
     <message>
-        <source>To use northernd, or the -server option to northern-qt, you must set an rpcpassword in the configuration file:
+        <source>To use epicd, or the -server option to epic-qt, you must set an rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=northernrpc
+rpcuser=epicrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
@@ -3715,10 +3715,10 @@ If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
 for example: alertnotify=echo %%s | mail -s "Northern Alert" admin@foo.com
 </source>
-        <translation>For at bruge northernd eller -server muligheden sammen med northern-qt skal der angives et rpc kodeord i konfigurationsfilen:
+        <translation>For at bruge epicd eller -server muligheden sammen med epic-qt skal der angives et rpc kodeord i konfigurationsfilen:
 %s
 De anbefales at benytte følgende tilfældige kodeord
-Rpcuser=northernrpc
+Rpcuser=epicrpc
 rpcpasswrd=%s
 (Det er ikke nødvendigt at huske dette kodeord)
 Brugernavn og kodeord MÅ IKKE VÆRE ENS!

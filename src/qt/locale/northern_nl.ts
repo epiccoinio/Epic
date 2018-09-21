@@ -598,8 +598,8 @@
         <translation>Verstuur munten naar een NORT adres</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and northern: URIs)</source>
-        <translation>Vraag betaling aan (genereert QR-codes en northern: URI's)</translation>
+        <source>Request payments (generates QR codes and epic: URIs)</source>
+        <translation>Vraag betaling aan (genereert QR-codes en epic: URI's)</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -658,8 +658,8 @@
         <translation>Open Masternode configuratiebestand</translation>
     </message>
     <message>
-        <source>Open a northern: URI or payment request</source>
-        <translation>Open een northern: URI of betaalverzoek</translation>
+        <source>Open a epic: URI or payment request</source>
+        <translation>Open een epic: URI of betaalverzoek</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -817,8 +817,8 @@ MultiSend: %1</translation>
         <translation>TextLabel</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (northern.conf).</source>
-        <translation>Niet alle transacties worden getoond. Om alle transacties te bekijken moet u txindex=1 instellen in het configuratie bestand (northern.conf).</translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (epic.conf).</source>
+        <translation>Niet alle transacties worden getoond. Om alle transacties te bekijken moet u txindex=1 instellen in het configuratie bestand (epic.conf).</translation>
     </message>
 </context>
 <context>
@@ -2583,7 +2583,7 @@ MultiSend: %1</translation>
     </message>
 </context>
 <context>
-    <name>northern-core</name>
+    <name>epic-core</name>
     <message>
         <source>(default: %s)</source>
         <translation>(standaard: %s)</translation>

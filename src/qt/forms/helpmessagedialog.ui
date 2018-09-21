@@ -28,7 +28,7 @@
       </sizepolicy>
      </property>
      <property name="pixmap">
-      <pixmap resource="../northern.qrc">:/images/about</pixmap>
+      <pixmap resource="../epic.qrc">:/images/about</pixmap>
      </property>
      <property name="alignment">
       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
@@ -100,7 +100,7 @@
   </layout>
  </widget>
  <resources>
-  <include location="../northern.qrc"/>
+  <include location="../epic.qrc"/>
  </resources>
  <connections>
   <connection>

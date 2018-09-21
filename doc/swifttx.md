@@ -12,8 +12,8 @@ When a "Transaction Lock" occurs the hash of the related transaction is broadcas
 * `zmqpubhashtxlock`: publishes the transaction hash when locked via SwiftTX
 
 This mechanism has been integrated into Bitcore-Node-Northern which allows for notification to be broadcast through Insight API in one of two ways:
-* WebSocket: [https://github.com/northern/insight-api-northern#web-socket-api](https://github.com/northern/insight-api-northern#web-socket-api)
-* API: [https://github.com/northern/insight-api-northern#swifttx-transactions](https://github.com/northern/insight-api-northern#swifttx-transactions)
+* WebSocket: [https://github.com/epic/insight-api-epic#web-socket-api](https://github.com/epic/insight-api-epic#web-socket-api)
+* API: [https://github.com/epic/insight-api-epic#swifttx-transactions](https://github.com/epic/insight-api-epic#swifttx-transactions)
 
 ####Command line option
 

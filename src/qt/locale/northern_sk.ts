@@ -602,8 +602,8 @@
         <translation>Odoslať mince na adresu NORT</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and northern: URIs)</source>
-        <translation>Vyžiadať platby (generuje QR kódy a northern: identifikátory URI)</translation>
+        <source>Request payments (generates QR codes and epic: URIs)</source>
+        <translation>Vyžiadať platby (generuje QR kódy a epic: identifikátory URI)</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -662,8 +662,8 @@
         <translation>Otvoriť konfiguračný súbor masternodu</translation>
     </message>
     <message>
-        <source>Open a northern: URI or payment request</source>
-        <translation>Otvorte northern: URI alebo žiadosť o platbu</translation>
+        <source>Open a epic: URI or payment request</source>
+        <translation>Otvorte epic: URI alebo žiadosť o platbu</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -805,8 +805,8 @@ MultiSend: %1</translation>
         <translation>TextLabel</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (northern.conf).</source>
-        <translation>Nie všetky transakcie sa zobrazia. Ak chcete zobraziť všetky transakcie, musíte v konfiguračnom súbore (northern.conf) nastaviť txindex = 1.</translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (epic.conf).</source>
+        <translation>Nie všetky transakcie sa zobrazia. Ak chcete zobraziť všetky transakcie, musíte v konfiguračnom súbore (epic.conf) nastaviť txindex = 1.</translation>
     </message>
 </context>
 <context>
@@ -1249,7 +1249,7 @@ MultiSend: %1</translation>
     </message>
     </context>
 <context>
-    <name>northern-core</name>
+    <name>epic-core</name>
     <message>
         <source>Error</source>
         <translation>Chyba</translation>

@@ -2,10 +2,10 @@
 Encoding=UTF-8
 Name=Northern
 Comment=Northern P2P Cryptocurrency
-Exec=northern-qt %u
+Exec=epic-qt %u
 Terminal=false
 Type=Application
-Icon=northern128
-MimeType=x-scheme-handler/northern;
+Icon=epic128
+MimeType=x-scheme-handler/epic;
 Categories=Office;Finance;
-Name[en_US]=northern-qt.desktop
+Name[en_US]=epic-qt.desktop

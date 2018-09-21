@@ -111,20 +111,20 @@ mn01 127.0.0.1:6942 93HaYBVUCYjEMeeH1Y4sBGLALQZE1Yc1K64xiqgX37tGBDQL8Xg 2bcd3c84
 mn02 127.0.0.2:6942 93WaAb3htPJEV8E9aQcN23Jt97bPex7YvWfgMDTUdWJvzmrMqey aa9f1034d973377a5e733272c3d0eced1de22555ad45d6b24abadff8087948d4 0 7gnwGHt17heGpG9Crfeh4KGpYNFugPhJdh:25
 ```
 
-## What about the northern.conf file?
+## What about the epic.conf file?
 
-If you are using a masternode.conf file you no longer need the northern.conf file. The exception is if you need custom settings (thanks oblox).
+If you are using a masternode.conf file you no longer need the epic.conf file. The exception is if you need custom settings (thanks oblox).
 
-## Update northern.conf on server
+## Update epic.conf on server
 
-If you generated a new masternode private key, you will need to update the remote northern.conf files.
+If you generated a new masternode private key, you will need to update the remote epic.conf files.
 
 Shut down the daemon and then edit the file.
 
-```sudo nano .northern/northern.conf```
+```sudo nano .epic/epic.conf```
 
 ### Edit the masternodeprivkey
-If you generated a new masternode private key, you will need to update the masternodeprivkey value in your remote northern.conf file.
+If you generated a new masternode private key, you will need to update the masternodeprivkey value in your remote epic.conf file.
 
 ## Start your MasterNodes
 
@@ -134,9 +134,9 @@ If your remote server is not running, start your remote daemon as you normally w
 
 I usually confirm that remote is on the correct block by issuing:
 
-```northernd getinfo```
+```epicd getinfo```
 OR
-```northern-cli getinfo```
+```epic-cli getinfo```
 
 And compare with the official explorer at http://explorer.nort.network
 

@@ -328,32 +328,32 @@ static const CRPCCommand vRPCCommands[] =
         {"hidden", "setmocktime", &setmocktime, true, false, false},
 
         /* Northern features */
-        {"northern", "masternode", &masternode, true, true, false},
-        {"northern", "listmasternodes", &listmasternodes, true, true, false},
-        {"northern", "getmasternodecount", &getmasternodecount, true, true, false},
-        {"northern", "masternodeconnect", &masternodeconnect, true, true, false},
-        {"northern", "masternodecurrent", &masternodecurrent, true, true, false},
-        {"northern", "masternodedebug", &masternodedebug, true, true, false},
-        {"northern", "startmasternode", &startmasternode, true, true, false},
-        {"northern", "createmasternodekey", &createmasternodekey, true, true, false},
-        {"northern", "getmasternodeoutputs", &getmasternodeoutputs, true, true, false},
-        {"northern", "listmasternodeconf", &listmasternodeconf, true, true, false},
-        {"northern", "getmasternodestatus", &getmasternodestatus, true, true, false},
-        {"northern", "getmasternodewinners", &getmasternodewinners, true, true, false},
-        {"northern", "getmasternodescores", &getmasternodescores, true, true, false},
-        {"northern", "mnbudget", &mnbudget, true, true, false},
-        {"northern", "preparebudget", &preparebudget, true, true, false},
-        {"northern", "submitbudget", &submitbudget, true, true, false},
-        {"northern", "mnbudgetvote", &mnbudgetvote, true, true, false},
-        {"northern", "getbudgetvotes", &getbudgetvotes, true, true, false},
-        {"northern", "getnextsuperblock", &getnextsuperblock, true, true, false},
-        {"northern", "getbudgetprojection", &getbudgetprojection, true, true, false},
-        {"northern", "getbudgetinfo", &getbudgetinfo, true, true, false},
-        {"northern", "mnbudgetrawvote", &mnbudgetrawvote, true, true, false},
-        {"northern", "mnfinalbudget", &mnfinalbudget, true, true, false},
-        {"northern", "checkbudgets", &checkbudgets, true, true, false},
-        {"northern", "mnsync", &mnsync, true, true, false},
-        {"northern", "spork", &spork, true, true, false},
+        {"epic", "masternode", &masternode, true, true, false},
+        {"epic", "listmasternodes", &listmasternodes, true, true, false},
+        {"epic", "getmasternodecount", &getmasternodecount, true, true, false},
+        {"epic", "masternodeconnect", &masternodeconnect, true, true, false},
+        {"epic", "masternodecurrent", &masternodecurrent, true, true, false},
+        {"epic", "masternodedebug", &masternodedebug, true, true, false},
+        {"epic", "startmasternode", &startmasternode, true, true, false},
+        {"epic", "createmasternodekey", &createmasternodekey, true, true, false},
+        {"epic", "getmasternodeoutputs", &getmasternodeoutputs, true, true, false},
+        {"epic", "listmasternodeconf", &listmasternodeconf, true, true, false},
+        {"epic", "getmasternodestatus", &getmasternodestatus, true, true, false},
+        {"epic", "getmasternodewinners", &getmasternodewinners, true, true, false},
+        {"epic", "getmasternodescores", &getmasternodescores, true, true, false},
+        {"epic", "mnbudget", &mnbudget, true, true, false},
+        {"epic", "preparebudget", &preparebudget, true, true, false},
+        {"epic", "submitbudget", &submitbudget, true, true, false},
+        {"epic", "mnbudgetvote", &mnbudgetvote, true, true, false},
+        {"epic", "getbudgetvotes", &getbudgetvotes, true, true, false},
+        {"epic", "getnextsuperblock", &getnextsuperblock, true, true, false},
+        {"epic", "getbudgetprojection", &getbudgetprojection, true, true, false},
+        {"epic", "getbudgetinfo", &getbudgetinfo, true, true, false},
+        {"epic", "mnbudgetrawvote", &mnbudgetrawvote, true, true, false},
+        {"epic", "mnfinalbudget", &mnfinalbudget, true, true, false},
+        {"epic", "checkbudgets", &checkbudgets, true, true, false},
+        {"epic", "mnsync", &mnsync, true, true, false},
+        {"epic", "spork", &spork, true, true, false},
 #ifdef ENABLE_WALLET
 
         /* Wallet */
@@ -1070,7 +1070,7 @@ std::vector<std::string> CRPCTable::listCommands() const
 
 std::string HelpExampleCli(string methodname, string args)
 {
-    return "> northern-cli " + methodname + " " + args + "\n";
+    return "> epic-cli " + methodname + " " + args + "\n";
 }
 
 std::string HelpExampleRpc(string methodname, string args)

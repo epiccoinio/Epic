@@ -3,17 +3,17 @@ Description=Northern's distributed currency daemon
 After=network.target
 
 [Service]
-User=northern
-Group=northern
+User=epic
+Group=epic
 
 Type=forking
-PIDFile=/var/lib/northernd/northernd.pid
+PIDFile=/var/lib/epicd/epicd.pid
 
-ExecStart=/usr/bin/northernd -daemon -pid=/var/lib/northernd/northernd.pid \
-          -conf=/etc/northern/northern.conf -datadir=/var/lib/northernd
+ExecStart=/usr/bin/epicd -daemon -pid=/var/lib/epicd/epicd.pid \
+          -conf=/etc/epic/epic.conf -datadir=/var/lib/epicd
 
-ExecStop=-/usr/bin/northern-cli -conf=/etc/northern/northern.conf \
-         -datadir=/var/lib/northernd stop
+ExecStop=-/usr/bin/epic-cli -conf=/etc/epic/epic.conf \
+         -datadir=/var/lib/epicd stop
 
 Restart=always
 PrivateTmp=true

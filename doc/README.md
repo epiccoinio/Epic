@@ -13,12 +13,12 @@ The following are some helpful notes on how to run Northern on your native platf
 
 Unpack the files into a directory and run:
 
-- bin/32/northern-qt (GUI, 32-bit) or bin/32/northernd (headless, 32-bit)
-- bin/64/northern-qt (GUI, 64-bit) or bin/64/northernd (headless, 64-bit)
+- bin/32/epic-qt (GUI, 32-bit) or bin/32/epicd (headless, 32-bit)
+- bin/64/epic-qt (GUI, 64-bit) or bin/64/epicd (headless, 64-bit)
 
 ### Windows
 
-Unpack the files into a directory, and then run northern-qt.exe.
+Unpack the files into a directory, and then run epic-qt.exe.
 
 ### OSX
 
@@ -38,7 +38,7 @@ The following are developer notes on how to build Northern on your native platfo
 
 Development
 ---------------------
-The Northern repo's [root README](https://github.com/northern/northern/blob/master/README.md) contains relevant information on the development process and automated testing.
+The Northern repo's [root README](https://github.com/epic/epic/blob/master/README.md) contains relevant information on the development process and automated testing.
 
 - [Developer Notes](developer-notes.md)
 - [Multiwallet Qt Development](multiwallet-qt.md)

@@ -5,7 +5,7 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
-#include "config/northern-config.h"
+#include "config/epic-config.h"
 #endif
 
 #include "bitcoingui.h"
@@ -94,7 +94,7 @@ static void InitMessage(const std::string& message)
  */
 static std::string Translate(const char* psz)
 {
-    return QCoreApplication::translate("northern-core", psz).toStdString();
+    return QCoreApplication::translate("epic-core", psz).toStdString();
 }
 
 static QString GetLangTerritory()
@@ -141,11 +141,11 @@ static void initTranslations(QTranslator& qtTranslatorBase, QTranslator& qtTrans
     if (qtTranslator.load("qt_" + lang_territory, QLibraryInfo::location(QLibraryInfo::TranslationsPath)))
         QApplication::installTranslator(&qtTranslator);
 
-    // Load e.g. bitcoin_de.qm (shortcut "de" needs to be defined in northern.qrc)
+    // Load e.g. bitcoin_de.qm (shortcut "de" needs to be defined in epic.qrc)
     if (translatorBase.load(lang, ":/translations/"))
         QApplication::installTranslator(&translatorBase);
 
-    // Load e.g. bitcoin_de_DE.qm (shortcut "de_DE" needs to be defined in northern.qrc)
+    // Load e.g. bitcoin_de_DE.qm (shortcut "de_DE" needs to be defined in epic.qrc)
     if (translator.load(lang_territory, ":/translations/"))
         QApplication::installTranslator(&translator);
 }
@@ -254,7 +254,7 @@ private:
     void startThread();
 };
 
-#include "northern.moc"
+#include "epic.moc"
 
 BitcoinCore::BitcoinCore() : QObject()
 {
@@ -485,7 +485,7 @@ void BitcoinApplication::initializeResult(int retval)
 
 #ifdef ENABLE_WALLET
         // Now that initialization/startup is done, process any command-line
-        // northern: URIs or payment requests:
+        // epic: URIs or payment requests:
         connect(paymentServer, SIGNAL(receivedPaymentRequest(SendCoinsRecipient)),
             window, SLOT(handlePaymentRequest(SendCoinsRecipient)));
         connect(window, SIGNAL(receivedURI(QString)),
@@ -537,8 +537,8 @@ int main(int argc, char* argv[])
     QTextCodec::setCodecForCStrings(QTextCodec::codecForTr());
 #endif
 
-    Q_INIT_RESOURCE(northern_locale);
-    Q_INIT_RESOURCE(northern);
+    Q_INIT_RESOURCE(epic_locale);
+    Q_INIT_RESOURCE(epic);
 
     BitcoinApplication app(argc, argv);
 #if QT_VERSION > 0x050100
@@ -597,7 +597,7 @@ int main(int argc, char* argv[])
     if (!Intro::pickDataDirectory())
         return 0;
 
-    /// 6. Determine availability of data directory and parse northern.conf
+    /// 6. Determine availability of data directory and parse epic.conf
     /// - Do not call GetDataDir(true) before this step finishes
     if (!boost::filesystem::is_directory(GetDataDir(false))) {
         QMessageBox::critical(0, QObject::tr("Northern Core"),
@@ -654,7 +654,7 @@ int main(int argc, char* argv[])
         exit(0);
 
     // Start up the payment server early, too, so impatient users that click on
-    // northern: links repeatedly have their payment requests routed to this process:
+    // epic: links repeatedly have their payment requests routed to this process:
     app.createPaymentServer();
 #endif
 

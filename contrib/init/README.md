@@ -1,10 +1,10 @@
 Sample configuration files for:
 
-SystemD: northernd.service
-Upstart: northernd.conf
-OpenRC:  northernd.openrc
-         northernd.openrcconf
-CentOS:  northernd.init
+SystemD: epicd.service
+Upstart: epicd.conf
+OpenRC:  epicd.openrc
+         epicd.openrcconf
+CentOS:  epicd.init
 
 have been made available to assist packagers in creating node packages here.
 

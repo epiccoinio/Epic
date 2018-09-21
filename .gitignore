@@ -7,12 +7,12 @@ reset-files.bash
 *.tar.gz
 
 *.exe
-src/northern
-src/northernd
-src/northern-cli
-src/northern-tx
-src/test/test_northern
-src/qt/test/test_northern-qt
+src/epic
+src/epicd
+src/epic-cli
+src/epic-tx
+src/test/test_epic
+src/qt/test/test_epic-qt
 
 # autoreconf
 Makefile.in
@@ -38,8 +38,8 @@ confdefs.h
 conftest.cpp
 conftest.err
 libtool
-src/config/northern-config.h
-src/config/northern-config.h.in
+src/config/epic-config.h
+src/config/epic-config.h.in
 src/config/stamp-h1
 share/setup.nsi
 share/qt/Info.plist
@@ -62,7 +62,7 @@ src/qt/test/moc*.cpp
 *.pyc
 *.o
 *.o-*
-.northern
+.epic
 *.a
 *.pb.cc
 *.pb.h
@@ -81,12 +81,12 @@ src/qt/test/moc*.cpp
 # Compilation and Qt preprocessor part
 *.qm
 Makefile
-northern-qt
+epic-qt
 Northern-Qt.app
 
 # Unit-tests
 Makefile.test
-northern-qt_test
+epic-qt_test
 src/test/buildenv.py
 
 # Resources cpp
@@ -102,7 +102,7 @@ build
 #lcov
 *.gcno
 /*.info
-test_northern.coverage/
+test_epic.coverage/
 total.coverage/
 coverage_percent.txt
 

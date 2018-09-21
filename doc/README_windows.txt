@@ -16,7 +16,7 @@ more scalable blockchain that is better suited for daily transactional use.
 
 Setup
 -----
-Unpack the files into a directory and run northern-qt.exe.
+Unpack the files into a directory and run epic-qt.exe.
 
 Northern Core is the original Northern client and it builds the backbone of the network.
 However, it downloads and stores the entire history of Northern transactions;
