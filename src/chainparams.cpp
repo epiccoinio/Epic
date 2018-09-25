@@ -105,7 +105,7 @@ public:
         nTargetSpacing = 1 * 60;  // Epic: 1 minute blocks during POW (block 1-200)
         nMaturity = 5; // 6 block maturity (+1 elsewhere)
         nMasternodeCountDrift = 20;
-        nMaxMoneyOut = 5000000 * COIN; // 5 million max supply
+        nMaxMoneyOut = 50000000 * COIN; // 50 million max supply
 
         /** Height or Time Based Activations **/
         nLastPOWBlock = 200;
