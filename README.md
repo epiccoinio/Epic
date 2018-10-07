@@ -13,10 +13,13 @@ Furthermore, as result of offering multiple ways for users to mint new EPIC coin
 #
 
 #### Block times: - *1 minute* 
-#### Maximum supply: - *5,000,000 (5 million) EPIC*
-#### Consensus mechanism: - *Proof-of-Stake (85% masternodes, 15% stakers)*
-#### Algorithm: - *Quark-hash* 
-#### Masternode collateral - *2,500 EPIC*  
+#### Maximum supply: - *50,000,000 (50 million) EPIC*
+#### Premine: - *3% - 1,500,000 (1.5 million) EPIC*
+#### Consensus mechanism: - *Proof-of-Stake (85% Masternodes, 15% Proof Of Stake)*
+#### Algorithm: - *PIVX Fork* 
+#### Confirmations For Staking/TX: *101*
+#### Coin Maturity: *1 Hour*
+#### Masternode collateral - *10,000 EPIC*  
 #### Features: - *SwiftTX, budget, treausury and masternode governance is enabled* 
 #### RPC Port: - *1256* 
 #### P2P Port: - *1255* 
@@ -25,22 +28,24 @@ Furthermore, as result of offering multiple ways for users to mint new EPIC coin
 
 ### Block reward breakdown (Block height - Reward per block)
 #
-#### Block 201-30,000	  -   *5.000 EPIC*
+#### Block 001-200 - Initial Premine
 
-#### Block 30,001-200,000   -   *3.750 EPIC*
+#### Block 201-50,000	  -   *8 EPIC*
 
-#### Block 200,001-500,000  -   *2.500 EPIC*
+#### Block 50,001-100,000   -   *12 EPIC*
 
-#### Block 500,001-900,000  -   *1.250 EPIC*
+#### Block 100,001-150,000  -   *14 EPIC*
 
-#### Block 900,001-1,500,000  -  *0.500 EPIC*
+#### Block 150,001-200,000  -   *18 EPIC*
 
-#### Block 1,500,001-6,000,000   -   *0.250 EPIC*
+#### Block 200,001-250,000  -  *20 EPIC*
 
-#### *11 year tapering inflation reward, with a cumulative supply capped at 5,000,000 EPIC.*
+#### Block 250,001-525,949   -   *16 EPIC*
+
+#### *Then a block reward reduction of ~30% every 525,949 blocks for the remaining years until total supply of 50,000,000 EPIC is reached (525,949 blocks with 60 second blocks = 1 year approx)*
 
 #
 
-### More information at [https://epic.network](https://epic.network)
-### Join our [Discord!](https://discord.gg/9nzt37V)
+### More information at [https://epic-coin.io](https://epic-coin.io)
+### Join our [Discord!](https://discord.gg/hKcEDms)
 
