@@ -6,7 +6,7 @@ Furthermore, as result of offering multiple ways for users to mint new EPIC coin
 
 ### View the Epic whitepaper here: 
 
-#### https://cdn.discordapp.com/attachments/416697792048922636/461555510496329728/Epic-Whitepaper-v1.0.0.pdf
+#### https://epic-coin.io/
 
 ## Coin Specs
 
@@ -44,8 +44,65 @@ Furthermore, as result of offering multiple ways for users to mint new EPIC coin
 
 #### *Then a block reward reduction of ~30% every 525,949 blocks for the remaining years until total supply of 50,000,000 EPIC is reached (525,949 blocks with 60 second blocks = 1 year approx)*
 
-#
+### OFFICIAL LINKS
 
-### More information at [https://epic-coin.io](https://epic-coin.io)
-### Join our [Discord!](https://discord.gg/hKcEDms)
+
+### Website
+http://epic-coin.io/
+
+### P2P Platform
+https://epictrader.io/
+
+### Whitepaper
+http://epic-coin.io/epic_coin_whitepaper.pdf
+ 
+### Block Explorer
+https://explorer.epic-coin.io/
+
+### ANN Thread 
+https://bitcointalk.org/index.php?topic=5042717
+
+### AltcoinsTalk Thread
+https://www.altcoinstalks.com/index.php?topic=57061.0
+
+### Medium
+https://medium.com/epic-coin
+
+### Twitter 
+https://twitter.com/theEpicCoin
+
+### Telegram
+https://t.me/joinchat/G51o5hL81qxOOtS6KO-gAQ
+
+### Discord 
+https://discord.gg/hKcEDms
+
+### Instagram
+https://www.instagram.com/epiccoinofficial/
+
+### Reddit
+https://www.reddit.com/r/TheEpicCoin/
+
+### Facebook
+https://www.facebook.com/EpicCoinOfficial/
+
+### CoinMarketCap
+TBA
+
+### CoinMarketCal
+https://coinmarketcal.com/coin/epic-coin
+
+### LiveCoinWatch
+https://www.livecoinwatch.com/price/EPIC-EPIC
+
+### MNCN
+https://mncn.online/coins/EPIC
+
+### Masternode.online
+https://masternodes.online/currencies/EPIC/
+
+### EXCHANGES:
+
+### CryptoBridge
+https://wallet.crypto-bridge.org/market/BRIDGE.EPIC_BRIDGE.BTC
 
