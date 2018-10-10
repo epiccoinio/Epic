@@ -16,7 +16,7 @@ Furthermore, as result of offering multiple ways for users to mint new EPIC coin
 #### Maximum supply: - *50,000,000 (50 million) EPIC*
 #### Premine: - *3% - 1,500,000 (1.5 million) EPIC*
 #### Consensus mechanism: - *Masternodes/Proof Of Stake (85% Masternodes, 15% Proof Of Stake)*
-#### Algorithm: - *PIVX Fork* 
+#### Algorithm: - *QUARK/PIVX* 
 #### Confirmations For Staking/TX: *101*
 #### Coin Maturity: *1 Hour*
 #### Masternode collateral - *10,000 EPIC*  
