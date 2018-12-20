@@ -103,7 +103,7 @@ https://masternodes.online/currencies/EPIC/
 
 ### EXCHANGES:
 
-### CryptoBridge
+### Crypto-Bridge
 https://wallet.crypto-bridge.org/market/BRIDGE.EPIC_BRIDGE.BTC
 
 ### STEX
