@@ -4,7 +4,7 @@ Epic Core is a decentralized, peer-to-peer cryptocurrency with a primary focus o
 
 Furthermore, as result of offering multiple ways for users to mint new EPIC coins, the network is a lot less centralized than some Proof-of-Work coins that have their hashrates dominated by one or two mining pools.
 
-### View the Epic Litepaper here: 
+### View the Epic whitepaper here: 
 
 #### https://epic-coin.io/
 
@@ -20,7 +20,7 @@ Furthermore, as result of offering multiple ways for users to mint new EPIC coin
 #### Confirmations For Staking/TX: *101*
 #### Coin Maturity: *1 Hour*
 #### Masternode collateral - *10,000 EPIC*  
-#### Features: - *SwiftTX* 
+#### Features: - *SwiftTX, budget, treausury and masternode governance is enabled* 
 #### RPC Port: - *1256* 
 #### P2P Port: - *1255* 
 
@@ -53,8 +53,8 @@ http://epic-coin.io/
 ### P2P Platform
 https://epictrader.io/
 
-### Litepaper
-http://epic-coin.io/epic_coin_litepaper.pdf
+### Whitepaper
+http://epic-coin.io/epic_coin_whitepaper.pdf
  
 ### Block Explorer
 https://explorer.epic-coin.io/
@@ -103,9 +103,5 @@ https://masternodes.online/currencies/EPIC/
 
 ### EXCHANGES:
 
-### Crypto-Bridge
+### CryptoBridge
 https://wallet.crypto-bridge.org/market/BRIDGE.EPIC_BRIDGE.BTC
-
-### STEX
-https://app.stex.com/en/trade/pair/BTC/EPIC/1D
-
