@@ -106,3 +106,6 @@ https://masternodes.online/currencies/EPIC/
 ### CryptoBridge
 https://wallet.crypto-bridge.org/market/BRIDGE.EPIC_BRIDGE.BTC
 
+### STEX
+https://app.stex.com/en/trade/pair/BTC/EPIC/1D
+
